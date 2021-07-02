@@ -1,0 +1,16 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "bot de discord",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "scyth3-c",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "fs": "0.0.1-security",
+    "mongodb": "^3.6.6"
+  }
+}
