@@ -5,18 +5,19 @@ Discord Bot se puede entender de una version mejorada de [ccunits](https://githu
 
 en las siguientes imagenes se presentan los comandos del bot y su respectiva explicacion.
 
-parte 1
+**Parte 1**
+
 ![one](help-img/one.png)
 
 
 
-parte 2 
+**Parte 2** 
 
 ![two](help-img/two.png)
 
 
 
-parte 3
+**Parte 3**
 
 ![three](help-img/three.png)
 
