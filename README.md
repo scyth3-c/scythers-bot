@@ -1,5 +1,5 @@
 # public-ccMegalo
-Discord Bot se puede entender de una version mejorada de [ccunits](https://github.com/scyth3-c/bot-public-ccunits) pero con nuevos comandos y interfaz mejorada, que fuera de la que era su funcion principal, el sistema financiero multiservidor cuenta con otras utilidades que creceran con el tiempo.
+Discord Bot se puede entender de una version mejorada de [ccunits](https://github.com/scyth3-c/bot-public-ccunits) pero con nuevos comandos y interfaz mejorada, que fuera de la que era su funcion principal, el sistema financiero multi-servidor cuenta con otras utilidades que creceran con el tiempo.
 
 ## comandos
 
