@@ -786,10 +786,7 @@ client.on("message", (message)=>{
          return;
        }
       }
-      if(commando == "send")
-      {
-         message.channel.send(args[0]);
-      }
+  
 });
 client.login(config.BOT_TOKEN);
 
