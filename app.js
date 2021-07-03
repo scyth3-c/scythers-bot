@@ -87,6 +87,7 @@ var logo = "https://i.imgur.com/SpY4ouW.png";
 
 client.on('ready',() =>{  
   client.user.setPresence({activity: {  name: "!comandos", type: "WATCHING"  },  status: "online"});
+  erry("BOT corriendo...");
 });
 
 
