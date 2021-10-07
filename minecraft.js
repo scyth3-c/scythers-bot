@@ -3,7 +3,6 @@ const { get } = require('http');
 const https = require('https');
 const { resolve } = require('path');
 
-
 const searchProfile = (nombre) => new Promise((resolve, reject) =>{
    let APIurl = `https://api.mojang.com/users/profiles/minecraft/${nombre}`;
    let jsonResult;
@@ -103,7 +102,6 @@ const getSkin = (user) => new Promise((resolve, reject) =>{
       });
    });
 });
-
 const showAvatar = (nombre) => new Promise((resolve, reject) =>{
    searchProfile(nombre).then(uid =>{
        let APIurl = `https://crafatar.com/avatars/${uid}?size=100&default=MHF_Steve&overlay`;
@@ -111,7 +109,6 @@ const showAvatar = (nombre) => new Promise((resolve, reject) =>{
        resolve(APIurl); }
    });
 });
-
 exports.getSkin = getSkin;
 exports.showAvatar = showAvatar;
 exports.searchProfile = searchProfile;
