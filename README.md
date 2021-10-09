@@ -4,6 +4,7 @@ Discord Bot se puede entender de una version mejorada de ccunits pero con nuevos
 ## comandos
 
 en las siguientes imagenes se presentan los comandos del bot y su respectiva explicacion.
+(click sobre la imagen)
 
 **Parte 1**
 
