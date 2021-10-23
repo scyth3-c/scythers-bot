@@ -26,6 +26,8 @@ en las siguientes imagenes se presentan los comandos del bot y su respectiva exp
 
 link para agregar el bot a su servidor haga [click aqui](https://discord.com/api/oauth2/authorize?client_id=832815877266997248&permissions=0&scope=bot)
 
+(NO VERIFICADO O ALGO POR EL ESTILO)
+
 
 
 
