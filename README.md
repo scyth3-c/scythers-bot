@@ -1,6 +1,8 @@
 # public-ccMegalo
 Discord Bot se puede entender de una version mejorada de ccunits pero con nuevos comandos y una mejor interfaz, que fuera de la que era su funcion principal, el sistema financiero multi-servidor cuenta con otras utilidades que creceran con el tiempo.
 
+## actualmente apagado :C
+
 ## comandos
 
 en las siguientes imagenes se presentan los comandos del bot y su respectiva explicacion.
