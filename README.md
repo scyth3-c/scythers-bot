@@ -6,13 +6,13 @@ se puede entender de una version mejorada de ccunits pero con nuevos comandos y 
 
 
 ``` 
-  !compile 
+  !compile ```
      
      #include <iostream>
     int main() {
         std::cout<<"hola mundo";
       return 0;
-    }
+    } ```
 ```
 
 
