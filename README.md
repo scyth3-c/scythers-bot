@@ -22,8 +22,7 @@
 
 <br/>
 
-se puede entender de una version mejorada de ccunits pero con nuevos comandos y una mejor interfaz, que fuera de la que era su funcion principal, el sistema financiero multi-servidor cuenta con otras utilidades que creceran con el tiempo.
-
+un bot de uso general, con tendencia  a una economía empleable en un mundo de fantasía y de rol, trae varias funciones potentes desde transferencias globales hasta compilar código C++
 
 ## nuevos comandos
 
