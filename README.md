@@ -113,6 +113,29 @@ un bot de uso general, con tendencia  a una economía empleable en un mundo de f
 
 ```
 
+### !init-change 
+```
+  !init-change #
+  
+  output: se ha cambiado el prefijo, de ! a # se reiniciara en el proximo shut del servidor
+
+```
+
+### !github 
+```
+ !github
+ 
+ output: repositorio de github del bot github.com/.......
+
+```
+
+### !cpp-example 
+```
+ !cpp-example
+ 
+ output: codigo de ejemplo de c++ y totalmente compilable por el bot
+```
+
 ### !gif 
 ```
   !gif
