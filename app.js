@@ -9,7 +9,7 @@ const compile = require('./compiler');
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefijo  = "!";
+let prefijo  = "!";
 
 
 client.on('ready',() =>{  
@@ -472,6 +472,10 @@ client.on("message", (message)=>{
 
       }
 
+      if (commando == "github") {
+        message.channel.send(embs.normal("https://github.com/scyth3-c/scyther-bot", message.author.avatarURL()));
+      }
+
       if(commando == "cpp-example") {
         message.channel.send(embs.normal(`
         #include <iostream> 
@@ -482,6 +486,14 @@ client.on("message", (message)=>{
         return 0;
         }
         `));
+      }
+      if(commando == "init-change") {
+        if(args[0] != undefined) {
+          message.channel.send(embs.normal(`prefijo cambiado de [ ${prefijo} ]  a  [ ${args[0]} ] , re reiniciara en el proximo shut del servidor`));
+          prefijo = args[0].toString();
+        } else {
+          message.channel.send(embs.normal("tienes que asignar uno, por ejemplo !init-change @ "));
+        }
       }
  
       
