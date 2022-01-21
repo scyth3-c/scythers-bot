@@ -487,14 +487,6 @@ client.on("message", (message)=>{
         }
         `));
       }
-      if(commando == "init-change") {
-        if(args[0] != undefined) {
-          message.channel.send(embs.normal(`prefijo cambiado de [ ${prefijo} ]  a  [ ${args[0]} ] , re reiniciara en el proximo shut del servidor`));
-          prefijo = args[0].toString();
-        } else {
-          message.channel.send(embs.normal("tienes que asignar uno, por ejemplo !init-change @ "));
-        }
-      }
  
       
 });
