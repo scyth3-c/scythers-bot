@@ -1,7 +1,20 @@
 # public-ccMegalo
 se puede entender de una version mejorada de ccunits pero con nuevos comandos y una mejor interfaz, que fuera de la que era su funcion principal, el sistema financiero multi-servidor cuenta con otras utilidades que creceran con el tiempo.
 
-## actualmente apagado :C
+
+## nuevos comandos
+
+
+``` 
+  !compile 
+     
+     #include <iostream>
+    int main() {
+        std::cout<<"hola mundo";
+      return 0;
+    }
+```
+
 
 ## comandos
 
