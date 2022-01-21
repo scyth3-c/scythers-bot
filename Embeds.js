@@ -89,7 +89,7 @@ function getuno(paykey, nombre, autor) {
     .addField('pertenece a ', nombre)
     .setThumbnail(coin)
     .setAuthor(autor)
-    .setFooter('megalo by scyth3-c');
+    .setFooter('scyther by scyth3-c');
 }
 
 function invita(avatar) {
@@ -101,13 +101,13 @@ function invita(avatar) {
 }
 
 function comandos() {
-     var commandos = { cpp_example:"!cpp-example         #devuelve codigo de ejemplo de c++" ,github: "!github        #devuelve el repositorio de codigo del bot",compile: "``` !compile  #compila codigo  c++  desde el bot (tienes que usar mensaje code multilinea)```", icono: "```!icono @usuario   #envia la foto de perfil del usuario mencionado```",unbase64: "```!unbase64 <texto>  #convierte base64 a texto ```" ,base64: "```!base64 <frase> #traduce una cadena de texto a base64 ```" ,status: "```!estatus  #estado del server  ```",mcnames: "```!mcnames <usuario>    #todos los nombres de un usuario de minecraft```",mcinfo: "```!mcinfo <usuario>  #mucha informacion de un perfil de minecraft ```",skin: "```!skin <usuario>   #muestra la cabeza de tu skin en minecraft! ```",bait: "```!bait #dices que era bait!!!```",gif: "```!gif   #gif aleatorio ```",slap: "``` !slap <target> #abofetear un objetivo ```",start:"```!start    #te registra en la base de datos ``` ", paykey: "```!paykey   #devuelve tu direccion de cartera donde estan todas tus unidades y a donde te pueden pagar```",pay: "```!pay <unidades> <paykey>  #realiza la tranferencia de unidades la paykey es la direccion de la cartera y deja el id del registro```", cuenta: "```!cuenta   #devuelve informacion de la cuenta```", fondos: "```!fondos   #devuelve tus unidades disponibles```", getpaykey: "```!getpaykey <nombre#123>   #devuelve la direccion de cartera de un usuario registrado```", reg: "```!reg <id>  #visualizar un registro escribiendo su id que deja al hacer el !pay```", del: "```!del <id>  #borra un registro con su id que deja al hacer !pay```", borrame: "```!borrame   #borra todos tus fondos```", ccinfo: "```!ccinfo   #informacion y contacto```", help: "```!helpcc    #ayuda general de ccMegalo el cc es para que no salten los otros bots```", comandos: "```!comandos  #muestra informacion sobre comandos y parametros```"};
+     var commandos = { cpp_example:"!cpp-example         #devuelve codigo de ejemplo de c++" ,github: "!github        #devuelve el repositorio de codigo del bot",compile: "``` !compile  #compila codigo  c++  desde el bot (tienes que usar mensaje code multilinea)```", icono: "```!icono @usuario   #envia la foto de perfil del usuario mencionado```",unbase64: "```!unbase64 <texto>  #convierte base64 a texto ```" ,base64: "```!base64 <frase> #traduce una cadena de texto a base64 ```" ,status: "```!estatus  #estado del server  ```",mcnames: "```!mcnames <usuario>    #todos los nombres de un usuario de minecraft```",mcinfo: "```!mcinfo <usuario>  #mucha informacion de un perfil de minecraft ```",skin: "```!skin <usuario>   #muestra la cabeza de tu skin en minecraft! ```",bait: "```!bait #dices que era bait!!!```",gif: "```!gif   #gif aleatorio ```",slap: "``` !slap <target> #abofetear un objetivo ```",start:"```!start    #te registra en la base de datos ``` ", paykey: "```!paykey   #devuelve tu direccion de cartera donde estan todas tus unidades y a donde te pueden pagar```",pay: "```!pay <unidades> <paykey>  #realiza la tranferencia de unidades la paykey es la direccion de la cartera y deja el id del registro```", cuenta: "```!cuenta   #devuelve informacion de la cuenta```", fondos: "```!fondos   #devuelve tus unidades disponibles```", getpaykey: "```!getpaykey <nombre#123>   #devuelve la direccion de cartera de un usuario registrado```", reg: "```!reg <id>  #visualizar un registro escribiendo su id que deja al hacer el !pay```", del: "```!del <id>  #borra un registro con su id que deja al hacer !pay```", borrame: "```!borrame   #borra todos tus fondos```", ccinfo: "```!ccinfo   #informacion y contacto```", help: "```!helpcc    #ayuda general de scyther el cc es para que no salten los otros bots```", comandos: "```!comandos  #muestra informacion sobre comandos y parametros```"};
      return new Discord.MessageEmbed()
        .setColor(setcolor)
        .setTitle('Ayuda')
        .setURL('https://pastebin.com/tiHiKdFC')
-       .setAuthor('ccMegalo guia', logo, 'https://pastebin.com/tiHiKdFC')
-       .setDescription('ccMegalo')
+       .setAuthor('scyther guia', logo, 'https://pastebin.com/tiHiKdFC')
+       .setDescription('scyther')
        .setThumbnail(coin)
         .addField('compile', commandos.compile)
         .addField('Start',commandos.start)
@@ -135,25 +135,25 @@ function comandos() {
         .addField('Helpcc', commandos.help)
         .addField('Comandos', commandos.comandos)
         .addField('Invita', '!invita  #genera el codigo de invitacion del bot')
-       .setFooter('ccmegalo y scyth3-c', logo);
+       .setFooter('scyther y scyth3-c', logo);
 }
 
 
 function ayuda() {
-    var help = { p1: "```ccMegalo acepeta sugerencias para añadir al bot```", p2: "```cada usuario al abrir su cuenta con !start contara con 1024 CC disponibles```", p3: "```con !pay se realizan transacciones y no importa el servidor, es la misma base de datos```", p4: "```usa !comandos para ver la lista de comandos```"};
+    var help = { p1: "```scyther acepeta sugerencias para añadir al bot```", p2: "```cada usuario al abrir su cuenta con !start contara con 1024 CC disponibles```", p3: "```con !pay se realizan transacciones y no importa el servidor, es la misma base de datos```", p4: "```usa !comandos para ver la lista de comandos```"};
     return new Discord.MessageEmbed()
       .setColor(setcolor)
       .setTitle('Ayuda')
       .setURL('https://pastebin.com/tiHiKdFC')
-      .setAuthor('CCmegalo guia', logo, 'https://pastebin.com/tiHiKdFC')
-      .setDescription('ccMegalo multi proposito')
+      .setAuthor('scyther guia', logo, 'https://pastebin.com/tiHiKdFC')
+      .setDescription('scyther multi proposito')
       .setThumbnail(coin)
        .addField('Parte 1',help.p1)
        .addField('Parte 2',help.p2)
        .addField('Parte 3',help.p3)
        .addField('Parte 4',help.p4)
        .addField('Parte 5', 'hay otras funciones con las que puedes divertirte')
-      .setFooter('ccmegalo by scyth3-c', logo);
+      .setFooter('scyther by scyth3-c', logo);
 }
 
 function slap(autor, target) {
@@ -174,7 +174,7 @@ function status() {
     .setColor(setcolor)
     .setTitle('status')
     .setURL('https://pastebin.com/tiHiKdFC')
-    .setAuthor('ccMegalo status', logo, 'https://pastebin.com/tiHiKdFC')
+    .setAuthor('scyther status', logo, 'https://pastebin.com/tiHiKdFC')
     .setDescription('cluster Abis')
     .setThumbnail("https://i.imgur.com/wVtCI0n.png")
      .addField('Cluster',serverData.cluster)
@@ -185,7 +185,7 @@ function status() {
      .addField('Server uptime',serverData.upTime )
      .addField('Server Version',serverData.serverVersion)
      .addField('Server Mem', serverData.serverMem) 
-    .setFooter('ccMegalo by scyth3-c', logo);
+    .setFooter('scyther by scyth3-c', logo);
 }
 function bait(autor) {
     return new Discord.MessageEmbed()
@@ -214,7 +214,7 @@ function icono(avatar, id, tag) {
     return  new Discord.MessageEmbed()
     .setTitle(`icono de perfil de ${tag}`)
     .setImage(`https://cdn.discordapp.com/avatars/${id}/${avatar}.png?size=256`)
-    .setFooter('ccMegalo by scyth3-c');
+    .setFooter('scyther by scyth3-c');
 }
 function nombres(autor, avatar, res){
     return new Discord.MessageEmbed()
