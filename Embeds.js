@@ -99,7 +99,7 @@ function invita(avatar) {
 }
 
 function comandos() {
-     var commandos = {icono: "```!icono @usuario   #envia la foto de perfil del usuario mencionado```",unbase64: "```!unbase64 <texto>  #convierte base64 a texto ```" ,base64: "```!base64 <frase> #traduce una cadena de texto a base64 ```" ,status: "```!estatus  #estado del server  ```",mcnames: "```!mcnames <usuario>    #todos los nombres de un usuario de minecraft```",mcinfo: "```!mcinfo <usuario>  #mucha informacion de un perfil de minecraft ```",skin: "```!skin <usuario>   #muestra la cabeza de tu skin en minecraft! ```",bait: "```!bait #dices que era bait!!!```",gif: "```!gif   #gif aleatorio ```",slap: "``` !slap <target> #abofetear un objetivo ```",start:"```!start    #te registra en la base de datos ``` ", paykey: "```!paykey   #devuelve tu direccion de cartera donde estan todas tus unidades y a donde te pueden pagar```",pay: "```!pay <unidades> <paykey>  #realiza la tranferencia de unidades la paykey es la direccion de la cartera y deja el id del registro```", cuenta: "```!cuenta   #devuelve informacion de la cuenta```", fondos: "```!fondos   #devuelve tus unidades disponibles```", getpaykey: "```!getpaykey <nombre#123>   #devuelve la direccion de cartera de un usuario registrado```", reg: "```!reg <id>  #visualizar un registro escribiendo su id que deja al hacer el !pay```", del: "```!del <id>  #borra un registro con su id que deja al hacer !pay```", borrame: "```!borrame   #borra todos tus fondos```", ccinfo: "```!ccinfo   #informacion y contacto```", help: "```!helpcc    #ayuda general de ccMegalo el cc es para que no salten los otros bots```", comandos: "```!comandos  #muestra informacion sobre comandos y parametros```"};
+     var commandos = {compile: "``` !compile  c++ code in multi-line message! ```", icono: "```!icono @usuario   #envia la foto de perfil del usuario mencionado```",unbase64: "```!unbase64 <texto>  #convierte base64 a texto ```" ,base64: "```!base64 <frase> #traduce una cadena de texto a base64 ```" ,status: "```!estatus  #estado del server  ```",mcnames: "```!mcnames <usuario>    #todos los nombres de un usuario de minecraft```",mcinfo: "```!mcinfo <usuario>  #mucha informacion de un perfil de minecraft ```",skin: "```!skin <usuario>   #muestra la cabeza de tu skin en minecraft! ```",bait: "```!bait #dices que era bait!!!```",gif: "```!gif   #gif aleatorio ```",slap: "``` !slap <target> #abofetear un objetivo ```",start:"```!start    #te registra en la base de datos ``` ", paykey: "```!paykey   #devuelve tu direccion de cartera donde estan todas tus unidades y a donde te pueden pagar```",pay: "```!pay <unidades> <paykey>  #realiza la tranferencia de unidades la paykey es la direccion de la cartera y deja el id del registro```", cuenta: "```!cuenta   #devuelve informacion de la cuenta```", fondos: "```!fondos   #devuelve tus unidades disponibles```", getpaykey: "```!getpaykey <nombre#123>   #devuelve la direccion de cartera de un usuario registrado```", reg: "```!reg <id>  #visualizar un registro escribiendo su id que deja al hacer el !pay```", del: "```!del <id>  #borra un registro con su id que deja al hacer !pay```", borrame: "```!borrame   #borra todos tus fondos```", ccinfo: "```!ccinfo   #informacion y contacto```", help: "```!helpcc    #ayuda general de ccMegalo el cc es para que no salten los otros bots```", comandos: "```!comandos  #muestra informacion sobre comandos y parametros```"};
      return new Discord.MessageEmbed()
        .setColor('#572364')
        .setTitle('Ayuda')
@@ -107,6 +107,7 @@ function comandos() {
        .setAuthor('ccMegalo guia', logo, 'https://pastebin.com/tiHiKdFC')
        .setDescription('ccMegalo')
        .setThumbnail(coin)
+        .addField('compile', commandos.compile)
         .addField('Start',commandos.start)
         .addField('Paykey',commandos.paykey)
         .addField('Pay',commandos.pay)
@@ -219,6 +220,16 @@ function nombres(autor, avatar, res){
     .setThumbnail(avatar)
     .addField('json', res.replace('undefined','nombres: '));
 }
+function output(msg, avatar) {
+
+    let out = " ```" +msg + "``` ";
+    return  new Discord.MessageEmbed()
+    .setColor('#1C2833')
+    .setTitle(out)
+    .setThumbnail(avatar)
+    .setFooter('C++17');
+}
+exports.output = output;
 exports.icono = icono;
 exports.nombres=nombres;
 exports.normal = normal;

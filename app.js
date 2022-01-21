@@ -4,6 +4,7 @@ const {TransferReference, erry} = require('./functions');
 const {start, insertUser, cuenta, forPaykey, updateid, registro, registros, delRegistros, erase, getkey} = require('./database');
 const Mine = require('./minecraft.js');
 const embs = require('./Embeds');
+const compile = require('./compiler');
 
 
 const Discord = require('discord.js');
@@ -417,7 +418,13 @@ client.on("message", (message)=>{
       message.channel.send(base64); 
     }
     if(commando == "base64") {
-      let res = Buffer.from(args[0]).toString('base64');
+      
+      let plain = "";
+      for(let i=0; i<args.length; i++) {
+        plain += args[i] + ' ';
+      }
+
+      let res = Buffer.from(plain).toString('base64');
       let base64 = embs.normal(res, message.author.avatarURL());
        message.channel.send(base64); 
      }
@@ -439,6 +446,44 @@ client.on("message", (message)=>{
        }
       }
 
+      if(commando == "compile") {
+        if(args[0] != undefined) {
+          
+          let raw = ` `;
+          for(let i=0; i<args.length; i++) {
+              raw += args[i] + ' ';
+          }
+
+          let precode = raw.replace("```", "");
+          let code = precode.replace("```", "");
+
+            compile.compile(code).then(res=>{
+
+              message.channel.send(embs.output(res));
+
+            }).catch(err=>{
+              console.log(err);
+              message.channel.send(embs.texto("error interno"));
+            })
+
+        }else{
+         message.channel.send(embs.texto("codigo vacio"));
+        }
+
+      }
+
+      if(commando == "cpp-example") {
+        message.channel.send(embs.normal(`
+        #include <iostream> 
+        #include <functional>
+           std::function<void(std::ostream&)> msg = [&](std::ostream& os) -> void {os<<"malloc_cizallas es bien GOD";};
+        int main() {
+          msg(std::cout);
+        return 0;
+        }
+        `));
+      }
+ 
       
 });
 
