@@ -1,4 +1,27 @@
 # public-ccMegalo
+
+ <div align="center"> 
+   <img src="https://img.shields.io/static/v1?label=update&message=One Week&color=success">
+   <img src="https://img.shields.io/static/v1?label=version&message=1.0.0&color=green">
+   <img src="https://img.shields.io/static/v1?label=state&message=ACTIVE&color=blue">
+ <img src="https://img.shields.io/static/v1?label=verify&message=FALSE&color=red">
+ </div>
+
+
+<div align="center">
+  <code>
+  <img src="https://i.imgur.com/lEtx2Cl.png" width="80px"/>
+</code>
+ </div>
+ 
+ <br/>
+
+<div align="center">
+   <a href="https://discord.com/api/oauth2/authorize?client_id=832815877266997248&permissions=0&scope=bot"> <img src="https://img.shields.io/badge/INCLUDE IN YOUR SERVER-blue"> </a>
+</div>
+
+<br/>
+
 se puede entender de una version mejorada de ccunits pero con nuevos comandos y una mejor interfaz, que fuera de la que era su funcion principal, el sistema financiero multi-servidor cuenta con otras utilidades que creceran con el tiempo.
 
 
