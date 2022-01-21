@@ -198,6 +198,13 @@ se puede entender de una version mejorada de ccunits pero con nuevos comandos y 
 
 ```
 
+### Capturas de pantalla
+
+![Captura de pantalla 2022-01-20 204752](https://user-images.githubusercontent.com/52190352/150450876-90aa7e99-b052-4592-a49e-b427f5d3eae4.png)
+
+
+
+
 
 link para agregar el bot a su servidor haga [click aqui](https://discord.com/api/oauth2/authorize?client_id=832815877266997248&permissions=0&scope=bot)
 
