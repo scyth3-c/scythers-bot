@@ -113,14 +113,6 @@ un bot de uso general, con tendencia  a una economía empleable en un mundo de f
 
 ```
 
-### !init-change 
-```
-  !init-change #
-  
-  output: se ha cambiado el prefijo, de ! a # se reiniciara en el proximo shut del servidor
-
-```
-
 ### !github 
 ```
  !github
