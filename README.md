@@ -28,13 +28,25 @@ un bot de uso general, con tendencia  a una economía empleable en un mundo de f
 
 
 ``` 
-  !compile ```
+!compile ```
      
      #include <iostream>
     int main() {
         std::cout<<"hola mundo";
       return 0;
     } ```
+    
+    output: hola mundo
+    
+    !assembly ```
+     
+     #include <iostream>
+    int main() {
+        std::cout<<"hola mundo";
+      return 0;
+    } ```
+    
+    output: archive.asm
 ```
 
 
