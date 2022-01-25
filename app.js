@@ -1,4 +1,5 @@
 const config = require('./config.json');
+const fs = require('fs');
 
 const {TransferReference, erry} = require('./functions');
 const {start, insertUser, cuenta, forPaykey, updateid, registro, registros, delRegistros, erase, getkey} = require('./database');
@@ -9,13 +10,13 @@ const compile = require('./compiler');
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let prefijo  = "!";
+const prefijo  = "!";
 
 
 client.on('ready',() =>{  
   client.user.setPresence({
     activity: {
-        name: "!comandos",
+        name: "mantenimiento",
         type: "WATCHING" // & STREAMING, LISTENING, WATCHING
     },
     status: "online" // & idle, dnd, offline
@@ -472,9 +473,27 @@ client.on("message", (message)=>{
 
       }
 
-      if (commando == "github") {
-        message.channel.send(embs.normal("https://github.com/scyth3-c/scyther-bot", message.author.avatarURL()));
+      if(commando=="assembly") {
+        let flag;
+        if(args[0] != undefined) {
+          let raw = ` `;
+          for(let i=0; i<args.length; i++) {
+              raw += args[i] + ' ';
+          }
+          let precode = raw.replace("```", "");
+          let code = precode.replace("```", "");
+
+          message.channel.send(embs.normal("compilando el archivo..."));
+           compile.assembly(code, message).then(res=>{
+             if(res) {
+               fs.unlinkSync(res);
+             }
+           });
+        } else {
+          message.channel.send(embs.texto("codigo vacio"));
+        }
       }
+
 
       if(commando == "cpp-example") {
         message.channel.send(embs.normal(`
