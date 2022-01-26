@@ -231,7 +231,10 @@ un bot de uso general, con tendencia  a una economía empleable en un mundo de f
 ![Captura de pantalla 2022-01-20 204752](https://user-images.githubusercontent.com/52190352/150450876-90aa7e99-b052-4592-a49e-b427f5d3eae4.png)
 ![Captura de pantalla 2022-01-24 215838](https://user-images.githubusercontent.com/52190352/150902824-527ceba8-5f2e-46eb-937b-136b4fd42e4f.png)
 
+### notas 
 
+
+ (Prox)
 
 
 
