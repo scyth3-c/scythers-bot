@@ -3,7 +3,7 @@
  <div align="center"> 
    <img src="https://img.shields.io/static/v1?label=update&message=One Week&color=success">
    <img src="https://img.shields.io/static/v1?label=version&message=1.0.0&color=green">
-   <img src="https://img.shields.io/static/v1?label=state&message=Active&color=blue">
+   <img src="https://img.shields.io/static/v1?label=state&message=OFFLINE&color=red">
  <img src="https://img.shields.io/static/v1?label=verify&message=FALSE&color=red">
  </div>
 
